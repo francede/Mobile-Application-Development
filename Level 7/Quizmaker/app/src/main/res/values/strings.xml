@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Quiz maker</string>
+
+    <!-- Home fragment -->
+    <string name="hf_welcome">Welcome to the quiz maker. Please create a question before starting the quiz.</string>
+    <string name="hf_start_quiz">START QUIZ</string>
+    <string name="hf_create_quiz">CREATE QUIZ</string>
+
+    <!-- Create Quiz fragment -->
+    <string name="cqf_create_here">Create your quiz here.</string>
+    <string name="cqf_question">Question</string>
+    <string name="cqf_answer">Answer</string>
+    <string name="cqf_create">Create</string>
+
+    <!-- Quiz fragment -->
+    <string name="q_answer">Answer</string>
+    <string name="q_confirm">Confirm answer</string>
+</resources>
