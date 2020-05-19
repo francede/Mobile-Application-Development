@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">HvA Quest</string>
+
+    <!-- Start fragment -->
+    <string name="sf_title">Welcome to the HvA locations quest</string>
+    <string name="sf_instructions">After pressing start you will start the quest. After each question a picture of a HvA building is shown. Go to the building and start the next question. At the end there will be a prize waiting for you!</string>
+    <string name="sf_start">Start Quest</string>
+
+    <!-- Question fragment -->
+    <string name="qf_confirm">Confirm</string>
+    <string name="wrong_answer">Wrong answer</string>
+    <string name="correct_answer">Correct answer!</string>
+
+    <!-- Location fragment -->
+    <string name="lf_instructions">Go to the location as shown in the image below.</string>
+    <string name="lf_next">Next Question</string>
+
+    <!-- End fragment -->
+    <string name="ef_congratulations">Congratulations, you finished the quest! Here is your prize.</string>
+    <string name="ef_finish">Finish</string>
+</resources>

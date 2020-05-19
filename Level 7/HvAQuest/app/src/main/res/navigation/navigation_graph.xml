@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.hvaquest.fragments.StartFragment"
+        android:label="HvA Quest"
+        tools:layout="@layout/fragment_start">
+        <action
+            android:id="@+id/action_startFragment_to_questionFragment"
+            app:destination="@id/questionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questionFragment"
+        android:name="com.example.hvaquest.fragments.QuestionFragment"
+        android:label="Question"
+        tools:layout="@layout/fragment_question">
+        <action
+            android:id="@+id/action_questionFragment_to_locationFragment"
+            app:destination="@id/locationFragment" />
+        <argument
+            android:name="questionNumber"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/locationFragment"
+        android:name="com.example.hvaquest.fragments.LocationFragment"
+        android:label="Location Clue"
+        tools:layout="@layout/fragment_location">
+        <action
+            android:id="@+id/action_locationFragment_to_endFragment"
+            app:destination="@id/endFragment" />
+        <action
+            android:id="@+id/action_locationFragment_to_questionFragment"
+            app:destination="@id/questionFragment" />
+        <argument
+            android:name="questionNumber"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/endFragment"
+        android:name="com.example.hvaquest.fragments.EndFragment"
+        android:label="Quest completed"
+        tools:layout="@layout/fragment_end" >
+        <action
+            android:id="@+id/action_endFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+    </fragment>
+</navigation>
